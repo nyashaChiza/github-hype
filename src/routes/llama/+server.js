@@ -120,7 +120,7 @@ export async function POST({ request, platform }) {
 			.slice(0, 15)
 	};
 
-	let prompt = `give a short and harsh roasting for the following github profile: ${username}. Here are the details: "${JSON.stringify(datas)}"`;
+        let prompt = `Give a glowing review of the GitHub profile ${username}, highlighting their impressive efforts and achievements. Be sure to include specific praises for their work, and offer insightful suggestions for further enhancement. Here are the details: "${JSON.stringify(datas)}"`;
 	switch (language) {
 		case 'indonesian':
 			prompt = `gunakan bahasa indonesia yang normal seperti manusia gaul, berikan roasting singkat dengan kejam dan menyindir dalam bahasa gaul untuk profile github berikut : ${username}. Berikut detailnya: "${JSON.stringify(datas)}"`;
